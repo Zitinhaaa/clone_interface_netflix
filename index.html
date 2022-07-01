@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"> <!--Colocando o Css dentro do HTML-->
+    <link rel="shortcut icon" href=".//img/favicon.ico"> <!--Colocando logo N do netflix na aba principal de cima-->
+    <title>Netflix Brasil - assistir séries online, assistir filmes online</title> <!--Titulo do html-->
+</head>
+
+<body>
+                           <!--Header= cabeçalho, o topo do nosso site-->
+    <header class="header">
+        <img src="./img/netflix.svg" alt="Logo Netflix" draggable="false"> <!--draggable="false" - siginifica não deixar a imagem ser arrastável-->
+          
+     <div class="box">
+                    <!--Seletor de opções qual linguagem assistir-->
+         <select class="select" name="paises">
+            <option>Português</option>
+            <option>English</option>
+         </select>
+                              <!--Ancoragem onde tem o botão que teria que dar para entrar na sua conta netflix-->
+        <a href="a" >Entrar</a>
+     </div>
+    
+    </header>
+
+                             <!--Main= corpo, onde fica o meio e informações principais-->
+    <main class="main">
+     <div class="main-child"> <!--Colocamos essa div para pegar a propriedade do pai class="main" então vai ficar centralizada e embaixo do outro--> 
+        <h1>Filmes, séries e muito mais. Sem limites.</h1>
+        <p>Assista onde quiser. Cancele quando quiser.</p>
+        <br>       <br>
+        <span>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</span>
+                     
+        
+             <!--Formulário type="email" - é a tela type="submit"-botão de envio-->
+        <form class="formulario">
+            <input  type="email" name="email" id="email" placeholder="Email" required>
+            <input type="submit"  name="botao" value="Vamos lá"> 
+        </form>
+    </div>    
+        <div class="gradient"></div>
+    </main>
+
+                                                                             <!--Primeiro é a TEVE-->
+        <section class="section">
+            <div class="container"> 
+             <div class="grid">
+                 <div>
+                    <h1>Aproveite na TV.</h1>
+                    <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+                 </div>
+                    <div class="img-tv">
+                 <img src="./img/tv.png" alt="tv">
+                 <video class="video" autoplay playsinline muted loop> <!--Os verdes fazem com que o video tenha ação-->
+                     <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"> <!--src= Link da tela netflix onde tem os canais-->
+                 </video>
+                    </div>  
+             </div>            
+            </div>
+        </section>
+
+                                                                                    <!--Segundo é o CELULAR-->
+        <section class="download section">
+            <div class="container"> 
+             <div class="grid">
+                 <div>
+                    <h1>Baixe séries para assistir offline.</h1>
+                    <p class="p-cel">Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+                 </div>
+                    <div class="img-tv">
+                 <img src="./img/el.jpg" alt="el">
+
+                 <div class="div-peq">
+
+                 <button class="botao-peq"> <img class="pequena-img" src="./img/pequena.png" alt="pequena"> <h2> Download em andamento... </h2> </button>
+
+                </div>
+
+
+              
+             </div>            
+            </div>
+        </section>
+
+                                                                                                       <!--Terceiro é o MONITOR, CELULAR E TABLET-->
+        <section class="cel-tablet-tv section">
+            <div class="container"> 
+             <div class="grid">
+                 <div>
+                    <h1> Assista quando quiser.</h1>
+                    <p>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+                 </div>
+                    <div class="img-tv">
+                 <img src="./img/tv-cel-tablet.png" alt="cel-tablet-tv">
+                 <video class="video" autoplay playsinline muted loop> <!--Os verdes fazem com que o video tenha ação-->
+                     <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4"> <!--src= Link da tela netflix onde tem os canais-->
+                 </video>
+                    </div>  
+             </div>            
+            </div>
+        </section>
+
+                                                                                                   <!--Quarto é o DESENHO-->
+
+        <section class="section download2">
+            <div class="container"> 
+             <div class="grid">
+                 <div>
+                    <h1> Crie perfis para crianças.</h1>
+                    <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+                 </div>
+                    <div class="img-tv">
+                 <img src="./img/desenho.png" alt="desenho">
+                    </div>  
+             </div>            
+            </div>
+        </section>
+
+    <footer class="footer">
+        <p>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+        <form class="formulario">
+            <input  type="email" name="email"  placeholder="Email" required>
+            <input type="submit" id="submit" name="botao"  value="Vamos lá"> 
+        </form>
+    </footer>
+
+</body>
+</html>
